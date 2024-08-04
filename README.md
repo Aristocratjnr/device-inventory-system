@@ -49,11 +49,3 @@ password: junior
 2. Navigate through the user-friendly interface to manage equipment, search for items, generate reports, and perform other actions.
 
 3. Explore the different features and functionalities of the system to effectively manage your inventory.
-
-# Contributing
-Contributions to the Online Inventory System are always welcome! If you have any ideas, bug fixes, or enhancements, please submit a pull request with a detailed explanation of the changes.
-
-Please ensure that you follow the project's code of conduct and guidelines for contributing.
-
-# License
-This project is licensed under the MIT License. You are free to use, modify, and distribute the code.
