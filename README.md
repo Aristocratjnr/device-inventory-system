@@ -1,5 +1,5 @@
 # online-inventory-system
-The Online Inventory System is a Python-based application that helps companies keep track of their equipment and manage their inventory efficiently.
+The Device Inventory System is a Python-based application that helps companies keep track of their equipment and manage their inventory efficiently.
 
 # Features
 - User Authentication: The system allows users to register, login, and manage their accounts securely.
