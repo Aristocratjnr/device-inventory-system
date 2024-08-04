@@ -37,8 +37,13 @@ Python3 app.py
 1. Login with the test account as a user with the following credentials:
 ```bash
 login as: user
-username: test
-password: test
+username: User
+password: User
+```
+```bash
+login as: admin
+username: David
+password: junior
 ```
 
 2. Navigate through the user-friendly interface to manage equipment, search for items, generate reports, and perform other actions.
