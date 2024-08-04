@@ -9,7 +9,7 @@ The Online Inventory System is a Python-based application that helps companies k
 # Installation
 - step1: Clone the repository.
 ```bash
-git@github.com:Awambeng/online-inventory-system.git
+git clone https://github.com/Aristocratjnr/device-inventory-system.git
 ```
 
 - Step2: Navigate to the project directory.
