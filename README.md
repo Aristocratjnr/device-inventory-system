@@ -1,4 +1,4 @@
-# online-inventory-system
+# Device-inventory-system
 The Device Inventory System is a Python-based application that helps companies keep track of their equipment and manage their inventory efficiently.
 
 # Features
