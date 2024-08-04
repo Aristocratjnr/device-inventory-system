@@ -1,0 +1,85 @@
+body {
+    background-image: url(./bg4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    color: #f0e6d6; /* Light beige for text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #3b2a1b; /* Dark brown background */
+}
+
+.marquee {
+    color: #d6a34b; /* Warm gold color */
+    font-size: 3em;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.mytext {
+    color: #f0e6d6; /* Light beige for text */
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+.myp {
+    color: #f0e6d6; /* Light beige for text */
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+
+.mybtn {
+    background: #8b5e3c; /* Dark brown button background */
+    color: #f0e6d6; /* Light beige for text */
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    transition: background-color 0.25s, transform 0.25s;
+    font-weight: bold;
+    margin-top: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.mybtn:hover {
+    color: #f0e6d6; /* Light beige for text */
+    background: #6f4f28; /* Slightly lighter brown for hover effect */
+    transform: scale(1.05);
+}
+
+@media (min-width: 368px) and (max-width: 578px) {
+    body {
+        overflow-y: hidden;
+    }
+
+    .marquee {
+        font-size: 2em;
+        margin-top: 30px;
+    }
+
+    .mytext {
+        font-size: 1.5em;
+    }
+
+    .myp {
+        font-size: 1.2em;
+    }
+
+    .mybtn {
+        font-size: 1.2em;
+        padding: 10px 20px;
+        margin-top: 30px;
+    }
+}

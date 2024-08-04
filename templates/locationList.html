@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Inventory System</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='main.css') }}"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+      $(document).ready(function(){
+         $('#search-button').on('click', function(){
+            var query = $('#query').val();
+            $.get('/search', {entity: 'location', query: query}, function(data){
+               $('#table-results').empty();
+               data.forEach(function(d){
+                  $('#table-results').append(`
+                  <tr>
+                    <td>${ d.location_name }</td>
+                    <td>${ d.number_of_offices}</td>
+                    <td>${ d.head_quater_contact}</td>
+                     <td class="action"> 
+                      <a href="/edit_location/${ d.id }"><i class="fa fa-edit" style="font-size:24px"></i></a>
+                      <a href="/delete_location/${ d.id }"><i class="fa fa-trash-o" style="font-size:24px"></i></a>
+                    </td>
+                  </tr>
+                  `);
+               });
+            });
+         });
+      });
+    </script>
+</head>
+<body>
+    <div class="header">
+      <a href="#" id="sidebar-icon">&#8801;</a>
+      <input type="search" id="query" name="search" placeholder="Search by Location Name...">
+      <button id="search-button">Submit</button>
+      <a href="#"><img src="{{ url_for('static', filename='logo.png') }}" alt=""></a>
+    </div>
+
+    <!--sidebar section-->
+    <section class="sidebar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="logo">
+        </div>
+        <div class="content">
+            <a href="/entry_point" class="home">Home</a>
+            <a href="/equipment" class="home">Equipment</a>
+            <a href="/location" class="home active">Location</a>
+            <a href="/employee" class="home">Employee</a>
+            <a href="/purchase" class="home">Purchases</a>
+            <a href="/login" class="home">Logout</a>
+        </div>
+    </section>
+
+    <!-- <marquee behavior="alternate" direction="right" scrollamount="10" margin-left="-300px" margin-right="300px">
+      <h1>Welcome To Our Online Inventory System</h1>
+    </marquee> -->
+    <h1 class="marquee">List of Locations</h1>
+    </div>
+    <div class="location-form">
+      <a href="/add-location" class="btn1">Add Location</a>
+      <table border="1" style="overflow: auto;">
+        <thead>
+          <tr>
+            <th>Location Name</th>
+            <th>Number Of Offices</th>
+            <th>Head Quater Contacts</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="table-results">
+          {% for location in locations  %}
+            <tr>
+              <td>{{ location.location_name }}</td>
+              <td>{{ location.number_of_offices}}</td>
+              <td>{{ location.head_quater_contact}}</td>
+              <td class="action">
+                <a href="/edit_location{{ location.id }}"><i class="fa fa-edit" style="font-size:24px"></i></a>
+                <a href="/delete_location{{ location.id }}"><i class="fa fa-trash-o" style="font-size:24px"></i></a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var sidebarIcon = document.getElementById("sidebar-icon");
+        var sidebar = document.querySelector(".sidebar");
+        var locationform = document.querySelector(".location-form");
+        var marquee = document.querySelector(".marquee");
+
+        sidebarIcon.addEventListener("click", function() {
+            sidebar.classList.toggle("show");
+            locationform.classList.toggle("full-width");
+            marquee.classList.toggle("test");
+
+
+            if (sidebar.classList.contains("show")) {
+              sidebarIcon.innerHTML = "&#8801;"; // Change the icon to &#9666; when the sidebar is shown
+            } else {
+              sidebarIcon.innerHTML = "&#8801;"; // Change the icon to &#x2630; when the sidebar is hidden
+            }
+        });
+      });
+    </script>
+</body>
+</html>

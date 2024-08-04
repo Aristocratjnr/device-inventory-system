@@ -1,0 +1,76 @@
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 400px;
+    padding: 40px 50px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #form h1 {
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #55A15C;
+    font-size: 1.5em;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .input-control {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .input-control label {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .input-control input,
+  .input-control select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 0.9em;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-control input:focus,
+  .input-control select:focus {
+    border-color: #55A15C;
+    outline: none;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  #form #mybtn {
+    padding: 12px 24px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #55A15C;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #form #mybtn:hover {
+    background-color: #4a8a52;
+  }
+  

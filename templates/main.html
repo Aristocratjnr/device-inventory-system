@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Inventory System</title>
+    <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='main1.css') }}"
+    />
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+</head>
+<body>
+    <div class="header">
+      <a href="#" id="sidebar-icon">&#8801;</a>
+      <span id="login-name">{{ name }}</span>
+      <a href="#"><img src="{{ url_for('static', filename='logimg.jpg') }}" alt="" class="logimg" style="background: red;"></a>
+    </div>
+
+    <!--sidebar section-->
+    <section class="sidebar">
+        <div class="logo">
+          <img src="{{ url_for('static', filename='bg4.png') }}" alt="logo">
+        </div>
+        <div class="content">
+            <a href="/entry_point" class="home active">Home</a>
+            <a href="/equipment" class="home">Equipment</a>
+            <a href="/location" class="home">Location</a>
+            <a href="/employee" class="home">Employee</a>
+            <a href="/purchase" class="home">Purchases</a>
+            <a href="/login" class="home">Logout</a>
+        </div>
+    </section>
+    
+    <h1 class="mytitle"></h1>
+    <div class="cards">
+        <div class="card" id="card1">
+          <h3>Number of Equipment</h3>
+          <hr><br>
+          <a href="/equipment"><p>{{ equipment_count }}</p></a>
+        </div>
+        <div class="card" id="card2">
+          <h3>Number of Employees</h3>
+          <hr><br> 
+          <a href="/employee"><p>{{ employee_count }}</p></a>
+        </div>
+        <div class="card" id="card3">
+          <h3>Number of Locations</h3>
+          <hr><br> 
+          <a href="/location"><p>{{ location_count }}</p></a>
+        </div>
+        <div class="card" id="card4">
+          <h3>Number of Purchases</h3>
+          <hr><br> 
+          <a href="/purchase"><p>{{ purchase_count }}</p></a>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var sidebarIcon = document.getElementById("sidebar-icon");
+          var sidebar = document.querySelector(".sidebar");
+          var cards = document.querySelector(".cards");
+          var mytitle = document.querySelector(".mytitle");
+
+          sidebarIcon.addEventListener("click", function() {
+              sidebar.classList.toggle("show");
+              cards.classList.toggle("full-width");
+              mytitle.classList.toggle("test");
+
+              if (sidebar.classList.contains("show")) {
+                sidebarIcon.innerHTML = "&#8801;"; // Change the icon to &#9666; when the sidebar is shown
+              } else {
+                sidebarIcon.innerHTML = "&#8801;"; // Change the icon to &#x2630; when the sidebar is hidden
+              }
+          });
+        });
+      </script>
+</body>
+</html>
