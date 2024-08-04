@@ -14,7 +14,7 @@ git clone https://github.com/Aristocratjnr/device-inventory-system.git
 
 - Step2: Navigate to the project directory.
 ```bash
-cd online-inventory-system
+cd device-inventory-system
 ```
 
 - Step3: Create and activate a virtual environment (optional but recommended):
