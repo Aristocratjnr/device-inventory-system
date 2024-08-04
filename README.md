@@ -43,7 +43,7 @@ password: User
 ```bash
 login as: admin
 username: David
-password: junior
+password: junior1
 ```
 
 2. Navigate through the user-friendly interface to manage equipment, search for items, generate reports, and perform other actions.
