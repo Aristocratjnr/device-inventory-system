@@ -3,145 +3,161 @@ body {
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #f0f0f0;
-  width: auto;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  width: auto;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 #Loginform {
-  background: #715050;
+  background: #333;
   display: flex;
-  top: 50%;
-  transform: translate(0, -50%);
-  position: absolute;
+  flex-direction: row;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  max-width: 900px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .column1 {
-  margin-right: 50px;
   padding: 50px;
+  flex: 1;
+  background: #444;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .column2 {
+  flex: 1;
   background: #5a5252;
-  padding: 50px;
-  width: auto;
   background-image: url(../static/bg4.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
 
 .input-control {
   display: flex;
   flex-direction: column;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 .input-control input {
-  display: block;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 8px;
   padding: 10px 20px;
-  width: 240px;
+  width: 100%;
   margin-top: 5px;
   background: #3d3d3d;
-  margin-bottom: 10px;
-  border: none;
+  border: 1px solid #555;
   color: #f0f0f0;
+  transition: background 0.3s, border 0.3s;
+}
+
+.input-control input:focus {
+  background: #555;
+  border: 1px solid #888;
 }
 
 .input-control label {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .h1 {
-  background: #948686;
+  background: linear-gradient(to right, #948686, #715050);
   color: #f0f0f0;
-  padding: 10px 20px;
-  width: 250px;
+  padding: 15px 30px;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 50px;
   border-radius: 5px;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn {
   font-size: 1em;
   color: #f0f0f0;
-  background: #472a2a;
-  display: block;
+  background: linear-gradient(to right, #472a2a, #715050);
   font-size: 20px;
   border-radius: 8px;
   padding: 10px 20px;
-  width: 280px;
+  width: 100%;
   font-weight: bold;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
-  background: #3d3d3d;
+  background: #6f4f28;
+  transform: scale(1.05);
 }
 
 .mytext {
   background: #7a7676;
   color: #f0f0f0;
   padding: 10px 20px;
-  width: auto;
   text-align: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-bottom: 50px;
   margin-top: 0;
   border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
 }
 
 .column2 p {
-  background: #6d6060;
+  background: rgba(109, 96, 96, 0.8);
   text-align: center;
-  width: auto;
   padding: 10px;
   border-radius: 5px;
   font-weight: bold;
-  margin: auto;
   font-size: 22px;
   color: #f0f0f0;
+  margin: 0 0 10px 0;
 }
 
 .user,
 .admin {
   display: flex;
-  margin-top: 50px;
-  text-align: center;
-  margin-left: 70px;
+  margin-top: 30px;
+  justify-content: center;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .admin input,
 .user input {
   width: 20px;
   height: 20px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .admin label,
 .user label {
   background: #472a2a;
   border-radius: 5px;
-  width: 150px;
-  padding: 2px;
-  margin-left: 5px;
+  padding: 5px 10px;
   display: flex;
   align-items: center;
   color: #f0f0f0;
@@ -150,7 +166,6 @@ body {
 .flashes {
   color: #f0f0f0;
   font-size: 30px;
-  text-decoration: none;
   text-align: center;
   font-weight: bold;
 }
@@ -159,23 +174,11 @@ body {
   #Loginform {
     flex-direction: column;
     margin: 20px;
-    top: initial;
-    transform: initial;
-    position: initial;
   }
 
-  .column1 {
-    margin-right: 0;
-    padding: 30px;
-  }
-
+  .column1,
   .column2 {
     padding: 30px;
-    border-radius: 10px;
-  }
-
-  .input-control input {
-    width: auto;
   }
 
   .h1 {
@@ -189,7 +192,6 @@ body {
 
   .user,
   .admin {
-    margin-left: 0;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
