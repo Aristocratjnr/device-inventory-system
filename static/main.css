@@ -63,6 +63,9 @@ body {
   height: 100vh;
   background: #707576;
   border-top: 5px solid #fff;
+  border-radius: 0 20px 20px 0; /* Curvy edges */
+  overflow: hidden;
+  transition: transform 0.3s ease, background 0.3s ease; /* Smooth transition for transform and background */
 }
 
 .logo {
