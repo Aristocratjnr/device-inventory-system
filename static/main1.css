@@ -55,13 +55,35 @@ body {
   }
   
   #sidebar-icon {
-    content: "\25C2";
+    content: "\25C2"; /* Consider using Font Awesome icon instead */
     margin-left: 310px;
     font-size: 25px;
     text-decoration: none;
     color: #000;
     font-weight: bold;
-  }
+    cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
+}
+
+#sidebar-icon:hover {
+    color: darkslategrey; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Use Font Awesome icon */
+#sidebar-icon::before {
+    content: "\f0c9"; /* Font Awesome icon for a sidebar/hamburger menu */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; /* Ensure the icon is solid */
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+    #sidebar-icon {
+        margin-left: 10px; /* Adjust margin for smaller screens */
+    }
+}
+
 
 #login-name{
     margin-right: 150px;
