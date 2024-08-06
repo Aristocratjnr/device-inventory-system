@@ -150,6 +150,8 @@ body {
   padding: 39px;
   justify-content: center;
   transition: background 0.3s ease; /* Smooth transition for background */
+  border-radius: 10px; /* Curvy edges for buttons */
+  margin: 10px; /* Add margin to separate the buttons */
 }
 
 .content a:hover {
