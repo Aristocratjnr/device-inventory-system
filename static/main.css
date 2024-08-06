@@ -182,15 +182,23 @@ tbody tr:nth-child(even) {
   color: #fff;
   font-size: 1em;
   padding: 10px 30px;
-  border-radius: 10px;
-  transition: background-color 0.25s;
+  border-radius: 15px; /* Smoother border radius */
+  transition: background-color 0.25s, box-shadow 0.25s, transform 0.25s;
   margin-bottom: 20px;
   text-decoration: none;
   font-size: 20px;
   display: block;
   margin-top: -20px;
   font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
+
+.btn1:hover {
+  background: #006400; /* Slightly darker green on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
 
 .marquee-container {
   overflow: hidden;
