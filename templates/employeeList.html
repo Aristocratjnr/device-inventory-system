@@ -10,6 +10,7 @@
     /> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <script>
       $(document).ready(function(){
@@ -54,12 +55,12 @@
             <img src="{{ url_for('static', filename='bg4.png') }}" alt="logo">
         </div>
         <div class="content">
-            <a href="/entry_point" class="home">Home</a>
-            <a href="/equipment" class="home">Equipment</a>
-            <a href="/location" class="home">Office</a>
-            <a href="/employee" class="home active">Employee</a>
-            <a href="/purchase" class="home">Purchases</a>
-            <a href="/login" class="home">Logout</a>
+          <a href="/entry_point" class="home active"><i class="fas fa-home"></i>&nbsp; Home</a>
+          <a href="/equipment" class="home"><i class="fas fa-cogs"></i>&nbsp;  Equipment</a>
+          <a href="/location" class="home"><i class="fas fa-building"></i>&nbsp;  Office</a>
+          <a href="/employee" class="home"><i class="fas fa-user"></i>&nbsp;  Employee</a>
+          <a href="/purchase" class="home"><i class="fas fa-shopping-cart"></i> &nbsp; Purchases</a>
+          <a href="/login" class="home"><i class="fas fa-sign-out-alt"></i>&nbsp;  Logout</a>
         </div>
     </section>
 
