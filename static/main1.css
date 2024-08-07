@@ -50,6 +50,11 @@ body {
   float: right;
   justify-content: center;
   margin-right: 50px;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.header img:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 #sidebar-icon {
@@ -85,13 +90,22 @@ body {
 #login-name {
   margin-right: 150px;
   float: right;
-  padding: auto;
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 12px;
-  top: 10;
+  top: 10px;
   right: 0%;
   position: absolute;
+  color: #fff; /* Set text color */
+  background: rgba(210, 128, 128, 0.7); /* Semi-transparent background */
+  padding: 10px 15px; /* Add padding for better spacing */
+  border-radius: 10px; /* Rounded corners */
+  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#login-name:hover {
+  background: #fff; /* Change background on hover */
+  color: #ceafaf; /* Change text color on hover */
 }
 
 .sidebar {
