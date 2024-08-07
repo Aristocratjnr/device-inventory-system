@@ -100,9 +100,9 @@ body {
   display: flex;
   text-decoration: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   border-bottom: 5px solid white;
-  padding: 39px;
+  padding: 20px;
   justify-content: center;
   border-radius: 10px; /* Curvy edges for buttons */
   margin: 10px; /* Add margin to separate the buttons */
