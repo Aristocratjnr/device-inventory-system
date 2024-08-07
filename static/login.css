@@ -194,4 +194,55 @@ body {
   .admin {
     font-size: 18px;
   }
+
+  .input-control {
+    margin: 10px 0;
+  }
+
+  .input-control input {
+    padding: 8px 15px;
+  }
+
+  .input-control label {
+    font-size: 16px;
+  }
+
+  .flashes {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .column1,
+  .column2 {
+    padding: 20px;
+  }
+
+  .h1 {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 8px 15px;
+  }
+
+  .user,
+  .admin {
+    font-size: 16px;
+  }
+
+  .input-control input {
+    font-size: 16px;
+    padding: 7px 10px;
+  }
+
+  .input-control label {
+    font-size: 14px;
+  }
+
+  .flashes {
+    font-size: 20px;
+  }
 }
