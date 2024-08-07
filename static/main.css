@@ -104,8 +104,14 @@ body {
   border-bottom: 5px solid white;
   padding: 20px;
   justify-content: center;
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for background and transform */
   border-radius: 10px; /* Curvy edges for buttons */
   margin: 10px; /* Add margin to separate the buttons */
+}
+
+.content a:hover {
+  background: #5b6162; /* Darker shade on hover */
+  transform: translateX(10px); /* Move to the right on hover */
 }
 
 /* Style the buttons */
