@@ -14,15 +14,34 @@ body {
     overflow: hidden;
     background-color: #2b1a0f; /* Darker brown background */
     transition: background-color 0.5s ease-in-out;
+    animation: fadeInBackground 2s ease-in-out;
+}
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .marquee {
-    color: #ffcc00; /* Bright gold color */
+    color: #00e6e6; /* Bright cyan color */
     font-size: 3em;
     margin-top: 50px;
     text-align: center;
     text-shadow: 2px 2px 4px #000000; /* Text shadow for better readability */
-    animation: glow 1s infinite alternate;
+    animation: glow 1s infinite alternate, slideIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 .mytext {
@@ -33,6 +52,16 @@ body {
     margin-top: 20px;
     font-family: 'Georgia', 'Times New Roman', Times, serif;
     text-shadow: 1px 1px 3px #000000;
+    animation: fadeInText 2s ease-in-out;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .myp {
@@ -42,6 +71,10 @@ body {
     font-family: 'Georgia', 'Times New Roman', Times, serif;
     margin-top: 10px;
     text-shadow: 1px 1px 3px #000000;
+    animation: fadeInText 2s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0; /* Initially hidden */
 }
 
 .mybtn {
@@ -57,6 +90,18 @@ body {
     display: inline-block;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+    animation: bounceIn 2s ease-in-out;
+}
+
+@keyframes bounceIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .mybtn:hover {
@@ -68,10 +113,10 @@ body {
 
 @keyframes glow {
     from {
-        text-shadow: 0 0 5px #a58e2f, 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 40px #ffcc00, 0 0 80px #ffcc00, 0 0 160px #ffcc00;
+        text-shadow: 0 0 5px rgb(65, 193, 193), 0 0 10px rgb(87, 196, 196), 0 0 20px #0ff, 0 0 40px #0ff, 0 0 80px #0ff, 0 0 160px #0ff;
     }
     to {
-        text-shadow: 0 0 10px #cebe7e, 0 0 20px #c6b056, 0 0 30px #ddc976, 0 0 50px #d6c47b, 0 0 100px #bdaf76, 0 0 200px #ffcc00;
+        text-shadow: 0 0 10px #00e6e6, 0 0 20px #00cccc, 0 0 30px #00b3b3, 0 0 50px #00b3b3, 0 0 100px #009999, 0 0 200px #00cccc;
     }
 }
 
