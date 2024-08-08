@@ -1,54 +1,98 @@
 body {
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
 }
 
 .container {
     width: 362px;
-    height: 460px;
-    margin: 20vh auto 0 auto;
+    height: auto;
     padding: 30px 50px;
-    background-color: whitesmoke;
-    border-radius: 4px;
-    font-size: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
 #form h1 {
-    color: #FFFFFF;
+    color: #fff;
     text-align: center;
     background-color: #55A15C;
-    font-size: x-large;
-    padding: 10px;
+    font-size: 1.5em;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #form #mybtn {
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-size: 1em;
     font-weight: bold;
     color: white;
     background-color: #55A15C;
     border: none;
     border-radius: 4px;
-    margin-top: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+#form #mybtn:hover {
+    background-color: #3e8043;
+    transform: translateY(-2px);
 }
 
 .input-control {
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .input-control input {
-    border: 2px solid #f0f0f0;
-	border-radius: 4px;
-	display: block;
-	font-size: 12px;
-	padding: 10px;
-	width: 292;
-    height: 38;
-    background-color: #D9D9D9;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 12px;
+    width: 100%;
+    background-color: #e6e6e6;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-#form .input-control{ 
+.input-control input:focus {
+    border-color: #55A15C;
+    background-color: #fff;
+}
+
+#form .input-control { 
     padding: 10px;
-    margin-top: 20px;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    #form h1 {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    #form #mybtn {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .input-control input {
+        font-size: 12px;
+        padding: 10px;
+    }
 }
