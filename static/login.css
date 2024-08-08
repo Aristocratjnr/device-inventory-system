@@ -19,11 +19,11 @@ body {
 }
 
 #Loginform {
-  background: #333;
+  background: #292929;
   display: flex;
   flex-direction: row;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
   max-width: 900px;
   width: 100%;
   overflow: hidden;
@@ -32,7 +32,7 @@ body {
 .column1 {
   padding: 50px;
   flex: 1;
-  background: #444;
+  background: #3d3d3d;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,11 +61,11 @@ body {
 .input-control input {
   font-size: 18px;
   border-radius: 8px;
-  padding: 10px 20px;
+  padding: 12px 20px;
   width: 100%;
   margin-top: 5px;
-  background: #3d3d3d;
-  border: 1px solid #555;
+  background: #404040;
+  border: 1px solid #666;
   color: #f0f0f0;
   transition: background 0.3s, border 0.3s;
 }
@@ -73,6 +73,8 @@ body {
 .input-control input:focus {
   background: #555;
   border: 1px solid #888;
+  outline: none;
+  box-shadow: 0 0 5px rgba(136, 136, 136, 0.7);
 }
 
 .input-control label {
@@ -84,57 +86,53 @@ body {
 .h1 {
   background: linear-gradient(to right, #948686, #715050);
   color: #f0f0f0;
-  padding: 15px 30px;
+  padding: 20px 30px;
   text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-top: 0;
-  margin-bottom: 50px;
-  border-radius: 5px;
-  font-size: 24px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 0 50px 0;
+  border-radius: 8px;
+  font-size: 26px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .btn {
-  font-size: 1em;
+  font-size: 1.1em;
   color: #f0f0f0;
   background: linear-gradient(to right, #472a2a, #715050);
-  font-size: 20px;
   border-radius: 8px;
-  padding: 10px 20px;
+  padding: 12px 20px;
   width: 100%;
   font-weight: bold;
   border: none;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn:hover {
   background: #6f4f28;
   transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .mytext {
   background: #7a7676;
   color: #f0f0f0;
-  padding: 10px 20px;
+  padding: 15px 25px;
   text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 50px;
-  margin-top: 0;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  font-size: 20px;
+  margin: 0 0 50px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-size: 22px;
 }
 
 .column2 p {
-  background: rgba(109, 96, 96, 0.8);
+  background: rgba(109, 96, 96, 0.85);
   text-align: center;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 15px;
+  border-radius: 8px;
   font-weight: bold;
   font-size: 22px;
   color: #f0f0f0;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
 }
 
 .user,
@@ -156,16 +154,17 @@ body {
 .admin label,
 .user label {
   background: #472a2a;
-  border-radius: 5px;
-  padding: 5px 10px;
+  border-radius: 8px;
+  padding: 6px 12px;
   display: flex;
   align-items: center;
   color: #f0f0f0;
+  cursor: pointer;
 }
 
 .flashes {
   color: #f0f0f0;
-  font-size: 30px;
+  font-size: 32px;
   text-align: center;
   font-weight: bold;
 }
@@ -196,11 +195,11 @@ body {
   }
 
   .input-control {
-    margin: 10px 0;
+    margin: 15px 0;
   }
 
   .input-control input {
-    padding: 8px 15px;
+    padding: 10px 15px;
   }
 
   .input-control label {
@@ -208,7 +207,7 @@ body {
   }
 
   .flashes {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 
@@ -219,13 +218,13 @@ body {
   }
 
   .h1 {
-    font-size: 20px;
-    padding: 10px 20px;
+    font-size: 22px;
+    padding: 15px 25px;
   }
 
   .btn {
     font-size: 18px;
-    padding: 8px 15px;
+    padding: 10px 15px;
   }
 
   .user,
@@ -235,7 +234,7 @@ body {
 
   .input-control input {
     font-size: 16px;
-    padding: 7px 10px;
+    padding: 8px 12px;
   }
 
   .input-control label {
@@ -243,6 +242,6 @@ body {
   }
 
   .flashes {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
