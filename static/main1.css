@@ -97,7 +97,6 @@ body {
   right: 0%;
   position: absolute;
   color: #fff; /* Set text color */
-  background: rgba(131, 129, 129, 0.7); /* Semi-transparent background */
   padding: 10px 15px; /* Add padding for better spacing */
   border-radius: 10px; /* Rounded corners */
   transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
