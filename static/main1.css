@@ -68,17 +68,7 @@ body {
   transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions for hover effects */
 }
 
-#sidebar-icon:hover {
-  color: darkslategrey; /* Change color on hover */
-  transform: scale(1.1); /* Slightly enlarge on hover */
-}
 
-/* Use Font Awesome icon */
-#sidebar-icon::before {
-  content: "\f0c9"; /* Font Awesome icon for a sidebar/hamburger menu */
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900; /* Ensure the icon is solid */
-}
 
 /* Responsive adjustments */
 @media only screen and (max-width: 768px) {
