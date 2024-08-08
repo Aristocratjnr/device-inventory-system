@@ -162,50 +162,58 @@ h1{
 }
 
 table {
-  width: 100%;
-  max-width: 1000px; /* Max width for large screens */
-  border-collapse: collapse;
+  width: 90%; /* Slightly reduce width for better padding */
+  max-width: 1000px;
+  border-collapse: separate; /* Use separate borders for a modern look */
+  border-spacing: 0; /* No spacing between cells */
   margin-top: 30px;
-  margin-left: auto; /* Center the table */
-  margin-right: auto; /* Center the table */
-  background: #fff; /* Background color for the table */
-  border-radius: 10px; /* Rounded corners for the table */
-  overflow: hidden; /* Ensure the rounded corners are visible */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  border-radius: 12px; /* Increased rounding for a softer look */
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
 }
 
 th, td {
-  padding: 15px;
+  padding: 18px; /* Slightly increased padding */
   text-align: left;
-  font-size: 20px;
+  font-size: 1em; /* Use relative font size for better scaling */
+  border-bottom: 1px solid #ddd; /* Light border between rows */
 }
 
 th {
   background-color: #c6e8f6;
   font-weight: bold;
-  text-transform: uppercase; /* Uppercase text for headers */
-  letter-spacing: 1px; /* Spacing between letters for headers */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #b0d8ec; /* Slightly darker border for header */
 }
 
 tbody tr:nth-child(even) {
-  background-color: #f2f2f2; /* Light gray for even rows */
+  background-color: #f9f9f9; /* Lighter gray for even rows */
 }
 
 tbody tr:nth-child(odd) {
-  background-color: #e6e6e6; /* Slightly darker gray for odd rows */
+  background-color: #f1f1f1; /* Slightly lighter gray for odd rows */
 }
 
 tbody tr:hover {
-  background-color: #dcdcdc; /* Light gray on hover */
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  background-color: #e0e0e0; /* Light gray on hover */
+  transition: background-color 0.3s ease;
 }
 
 @media (max-width: 768px) {
   table {
-    width: 95%; /* Adjust table width for smaller screens */
-    font-size: 14px; /* Adjust font size for smaller screens */
+    width: 100%; /* Full width for small screens */
+    font-size: 0.9em; /* Slightly smaller font size for better readability */
+  }
+
+  th, td {
+    padding: 14px; /* Reduced padding for smaller screens */
   }
 }
+
 
 .btn1 {
   background: darkgreen;
