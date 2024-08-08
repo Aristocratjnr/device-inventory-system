@@ -23,7 +23,7 @@ body {
 }
 
 .marquee {
-    color: #00e6e6; /* Bright cyan */
+    color: #d2691e; /* SaddleBrown color */
     font-size: 3em;
     margin-top: 50px;
     text-align: center;
@@ -37,7 +37,7 @@ body {
 }
 
 .mytext {
-    color: #e2dfda;
+    color: #f0e6d6;
     font-size: 2.5em;
     text-align: center;
     font-weight: bold;
@@ -91,8 +91,8 @@ body {
 }
 
 @keyframes glow {
-    0% { text-shadow: 0 0 5px #84cece, 0 0 10px #93d7d7, 0 0 20px #69bebe; }
-    100% { text-shadow: 0 0 10px #87cbcb, 0 0 20px #75c0c0, 0 0 40px #57a9a9; }
+    0% { text-shadow: 0 0 5px #8b5e3c, 0 0 10px #a0522d, 0 0 20px #a0522d; }
+    100% { text-shadow: 0 0 10px #a0522d, 0 0 20px #8b5e3c, 0 0 40px #8b5e3c; }
 }
 
 @media (min-width: 368px) and (max-width: 578px) {
