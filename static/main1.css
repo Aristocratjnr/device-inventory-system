@@ -92,11 +92,6 @@ body {
   transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
 }
 
-#login-name:hover {
-  background: #ffffff; /* Change background on hover */
-  color: #c87979; /* Change text color on hover */
-}
-
 .sidebar {
   position: fixed;
   top: 0;
