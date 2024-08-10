@@ -196,24 +196,35 @@ h1 {
   width: 200px;
   background-color: #f2f2f2;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 15px; /* Increased border-radius for curvy edges */
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a nice effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
 
 #card1 {
   background: #959696;
+  border-radius: 15px; /* Match the card border-radius */
 }
 
 #card2 {
   background: #c8dee6;
+  border-radius: 15px; /* Match the card border-radius */
 }
 
 #card3 {
   background: #cad1d3;
+  border-radius: 15px; /* Match the card border-radius */
 }
 
 #card4 {
   background: #dbe5e9;
+  border-radius: 15px; /* Match the card border-radius */
 }
 
 .card h3 {
