@@ -236,3 +236,7 @@ h1 {
 #card4 {
   background: #acacac;
 }
+
+.sidebar.show {
+  transform: translateX(-100%);
+}
