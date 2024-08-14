@@ -192,6 +192,7 @@ h1 {
   flex-direction: column;
   justify-content: space-between; /* Space between number and text */
   color: #ffffff; /* White text for contrast */
+  border: none; /* Remove the line (border) */
 }
 
 /* Hover effect for the card */
@@ -207,6 +208,7 @@ h1 {
   font-weight: bold;
   padding: 0;
   text-align: right; /* Align number to the right */
+  border: none; /* Remove any border that might cause a line */
 }
 
 /* Text at the bottom of the card styling */
@@ -218,6 +220,7 @@ h1 {
   padding-top: 10px;
   margin-top: auto; /* Push the text to the bottom */
 }
+
 
 /* Individual card colors */
 #card1 {
