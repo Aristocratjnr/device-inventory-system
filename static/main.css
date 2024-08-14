@@ -1,24 +1,25 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Verdana;
+  font-family: Verdana, sans-serif;
+  background-color: #f0f0f0;
+  height: auto;
 }
 
 .header {
-  background: #c6e8f6;
+  background: #0d87bb;
   padding: 25px;
-  /* display: flex; */
 }
 
-.header input{
+.header input {
   padding: 5px 15px;
   font-size: 20px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 5px;
-  margin-left: 400px;
+  margin-left: 350px;
 }
 
-.header button{
+.header button {
   padding: 5px 15px;
   font-size: 20px;
   border-radius: 5px;
@@ -27,14 +28,13 @@ body {
   font-weight: bold;
 }
 
-.header button:hover{
+.header button:hover {
   background: darkslategrey;
   color: black;
   font-weight: bold;
 }
 
-
-.header img{
+.header img {
   width: 45px;
   height: 45px;
   background: #707576;
@@ -42,58 +42,90 @@ body {
   float: right;
   justify-content: center;
   margin-right: 50px;
+  transition: transform 0.3s ease;
+}
+
+.header img:hover {
+  transform: scale(1.1);
 }
 
 #sidebar-icon {
-  content: "\25C2";
-  margin-left: 300px;
-  font-size: 45px;
-  border-radius: 5px;
+  margin-left: 310px;
+  font-size: 25px;
   text-decoration: none;
   color: #000;
   font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  #sidebar-icon {
+      margin-left: 10px;
+  }
+}
+
+#login-name {
+  margin-right: 150px;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  top: 10px;
+  right: 0%;
+  position: absolute;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
 
 .sidebar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 300px;
-  height: 100vh;
-  background: #707576;
+  width: 220px; /* Adjusted to match the image */
+  height: 100vh; /* Adjusted to cover the full height */
+  background: #a5c3c9;
   border-top: 5px solid #fff;
-  border-radius: 0 20px 20px 0; /* Curvy edges */
+  border-radius: 0 20px 20px 0;
   overflow: hidden;
-  transition: transform 0.3s ease, background 0.3s ease; /* Smooth transition for transform and background */
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.sidebar:hover {
+  background: #92b5bc;
 }
 
 .logo {
-  width: 300px;
-  height: 200px;
+  width: 220px;
+  height: 180px;
   background: rgba(104, 135, 106, 0.938);
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 0 20px 0 0;
 }
 
-
 .logo img {
-  width: 250px;
+  width: 180px;
   display: block;
   margin: auto;
   background-color: rgba(59, 112, 63, 0.938);
+  border-radius: 20px;
 }
 
 .content {
   background: #707576;
-  width: 300px;
-  height: calc(100vh - 200px); /* Adjust height based on logo height */
+  width: 220px;
+  height: calc(100vh - 180px); /* Adjust height based on logo height */
   position: fixed;
-  top: 200px; /* Adjust top position based on logo height */
+  top: 180px;
   z-index: 1;
   border-top: 5px solid #fff;
-  overflow-y: auto; /* Add scroll functionality if content overflows */
+  overflow-y: auto;
+  border-radius: 0 0 20px 0;
 }
 
 .content a {
@@ -102,19 +134,18 @@ body {
   color: #fff;
   font-size: 18px;
   border-bottom: 5px solid white;
-  padding: 20px;
+  padding: 10px 15px; /* Smaller padding for smaller buttons */
   justify-content: center;
-  transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for background and transform */
-  border-radius: 10px; /* Curvy edges for buttons */
-  margin: 10px; /* Add margin to separate the buttons */
+  transition: background 0.3s ease, transform 0.3s ease;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 .content a:hover {
-  background: #5b6162; /* Darker shade on hover */
-  transform: translateX(10px); /* Move to the right on hover */
+  background: #5b6162;
+  transform: translateX(10px);
 }
 
-/* Style the buttons */
 .home {
   border: none;
   outline: none;
@@ -123,25 +154,21 @@ body {
   cursor: pointer;
 }
 
-/* Style the active class (and buttons on mouse-over) */
 .active, .home:hover {
   background: darkslategrey;
   color: black;
   font-weight: bold;
 }
 
-h1{
+h1 {
   display: flex;
-  font-size: 60px;
+  font-size: 40px; /* Adjusted size */
   flex-wrap: wrap;
   justify-content: center;
-  gap: 50px;
-  margin-left: 300px;
-  text-align: center;
+  margin-left: 240px; /* Adjusted to align with the sidebar */
   margin-top: 40px;
-  color: rgb(12, 94, 94);
+  color: #333;
 }
-
 
 .location-form {
   display: flex;
