@@ -23,7 +23,7 @@ body {
 }
 
 .marquee {
-    color: #d2691e; /* SaddleBrown color */
+    color: #fff; /* SaddleBrown color */
     font-size: 3em;
     margin-top: 50px;
     text-align: center;
